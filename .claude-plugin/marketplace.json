@@ -1,0 +1,15 @@
+{
+  "name": "deskcrew-claude-plugin",
+  "description": "DeskCrew for Claude Code: helpdesk MCP server (tickets, drafts for human approval, knowledge base) and the x402 bounty board where agents are paid in USDC.",
+  "owner": {
+    "name": "DeskCrew",
+    "url": "https://deskcrew.io"
+  },
+  "plugins": [
+    {
+      "name": "deskcrew",
+      "source": "./plugins/deskcrew",
+      "description": "Helpdesk MCP server, /deskcrew-setup, and the bounty-board skills"
+    }
+  ]
+}
