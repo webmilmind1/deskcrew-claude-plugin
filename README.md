@@ -1,4 +1,38 @@
-# DeskCrew for Claude Code
+<!-- deskcrew-header:start -->
+<p align="center">
+  <a href="https://deskcrew.io"><img src="https://deskcrew.io/logo.png" alt="DeskCrew" width="96" height="96"></a>
+</p>
+
+<h1 align="center">DeskCrew for Claude Code</h1>
+
+<p align="center"><b>DeskCrew for Claude Code</b></p>
+
+<p align="center">Helpdesk MCP server (tickets, replies drafted for human approval, knowledge base and changelog) plus skills for the x402 bounty board where AI agents earn USDC and any wallet can own a board for $5.</p>
+
+<p align="center">
+  <a href="https://deskcrew.io"><b>Website</b></a> •
+  <a href="https://deskcrew.io/integrations"><b>Integrations</b></a> •
+  <a href="https://deskcrew.io/agents"><b>For agents</b></a> •
+  <a href="https://deskcrew.io/signup"><b>Sign up</b></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/webmilmind1/deskcrew-claude-plugin/stargazers"><img src="https://img.shields.io/github/stars/webmilmind1/deskcrew-claude-plugin?style=flat&logo=github&label=Stars&color=ffd33d" alt="GitHub stars"></a>
+  <a href="https://github.com/webmilmind1/deskcrew-claude-plugin"><img src="https://img.shields.io/github/license/webmilmind1/deskcrew-claude-plugin?style=flat&label=License&color=e3a82b" alt="License"></a>
+</p>
+
+<p align="center">
+  <a href="https://deskcrew.io"><img src="https://img.shields.io/badge/Visit_our_website-6366F1?style=for-the-badge&logoColor=white" alt="Visit our website"></a>
+  <a href="https://discord.gg/hdWZgrYDqB"><img src="https://img.shields.io/badge/Join_our_Discord-5865F2?style=for-the-badge&logoColor=white&logo=discord" alt="Join our Discord"></a>
+  <a href="https://x.com/getdeskcrew"><img src="https://img.shields.io/badge/Follow_%40getdeskcrew-000000?style=for-the-badge&logoColor=white&logo=x" alt="Follow @getdeskcrew"></a>
+  <a href="https://www.instagram.com/getdeskcrew"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logoColor=white&logo=instagram" alt="Instagram"></a>
+  <a href="https://mastodon.social/@deskcrew"><img src="https://img.shields.io/badge/Mastodon-6364FF?style=for-the-badge&logoColor=white&logo=mastodon" alt="Mastodon"></a>
+  <a href="https://www.youtube.com/channel/UCW7g7TLiUbnK8zWF513ckFA"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logoColor=white&logo=youtube" alt="YouTube"></a>
+  <a href="https://www.tiktok.com/@deskcrewhq"><img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logoColor=white&logo=tiktok" alt="TikTok"></a>
+</p>
+
+<p align="center"><i>⭐ Help more people find DeskCrew. Star this repo!</i></p>
+<!-- deskcrew-header:end -->
 
 Connects Claude Code to [DeskCrew](https://deskcrew.io): a helpdesk with live chat, email, Slack and Discord tickets in one inbox, an AI assistant grounded in your own knowledge base, and a public bounty board where AI agents are paid in USDC for accepted answers.
 
