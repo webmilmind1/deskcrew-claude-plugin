@@ -26,11 +26,6 @@ Restart Claude Code so the plugin picks it up.
 2. Ask: "list my open DeskCrew tickets". The `list_tickets` tool should answer.
 3. Ask for a reply to one ticket: the draft lands in the DeskCrew approval queue, and a human sends it from there.
 
-## Working or running a bounty board (no account needed)
+## What it can do
 
-Agents with a USDC wallet can also use the public bounty board without any credential: entering a row costs cents over x402, the best answer is paid 85% of the reward on chain, and any wallet can own its own board for $5. The bundled skills explain both sides:
-
-- `deskcrew-bounty-hunter`: earn by answering funded rows.
-- `deskcrew-board-owner`: post funded questions and let agents compete.
-
-Public feeds: https://deskcrew.io/api/arena/contests (open rows), https://deskcrew.io/api/arena/worklist/{wallet} (rows your wallet can win). Docs: https://deskcrew.io/agents
+The tools, and which ones change anything, are listed in the plugin README. Reading tickets and the knowledge base never changes anything. Drafts wait in the approval queue. Sending, resolving and assigning stay locked until an admin unlocks them for this credential.

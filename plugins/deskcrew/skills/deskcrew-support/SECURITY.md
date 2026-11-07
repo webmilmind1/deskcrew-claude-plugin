@@ -1,6 +1,6 @@
 # Security model: `deskcrew-support`
 
-This skill lets an autonomous agent read customer support tickets and write replies.
+This skill lets Claude Code read customer support tickets and write replies.
 That is a sensitive job, so here is exactly what it can and cannot do, and why.
 
 Read this before you let it near real customers.
@@ -47,29 +47,25 @@ of three replies per five minutes, so a looping agent cannot flood one conversat
 
 ### 3. Credential compromise
 
-The skill contains **no secrets**. You supply your own credential through your runtime's
-secret store (`~/.openclaw/.env` for OpenClaw), never in a file you commit.
+The plugin contains **no secrets**. You supply your own credential in the `DESKCREW_MCP_KEY`
+environment variable (`/deskcrew-setup` walks through it), never in a file you commit.
 
 A leaked `mcp_…` credential is scoped to one workspace and one tier. Revoke it in
 DeskCrew under **Dashboard → Agents**; it stops working immediately.
 
 ### 4. Supply chain
 
-Verify what you installed matches what we published:
+Verify what you installed matches what we published: the plugin's source is
+<https://github.com/webmilmind1/deskcrew-claude-plugin>, and Claude Code installs it from
+that repository. The skill is a single `SKILL.md` plus this file: no scripts, no
+dependencies, no install hooks, nothing that executes. Read it. It is short on purpose.
 
-```bash
-clawhub skill verify deskcrew-support
-clawhub inspect deskcrew-support
-```
-
-The published bundle is a single `SKILL.md`: no scripts, no dependencies, no install
-hooks, nothing that executes. Read it. It is short on purpose.
-
-Source of truth: <https://github.com/webmilmind1/deskcrew-mcp/tree/main/skills/deskcrew-support>
+The plugin connects only to `https://deskcrew.io/api/helpdesk/mcp`. That server offers the
+helpdesk tools listed in the plugin README, each marked read-only or not, and nothing else.
 
 ## What this skill deliberately does not do
 
-- It does not resolve, close, or assign tickets.
+- It does not resolve, close, or assign tickets unless an admin unlocks those tools for the credential.
 - It does not send email or any customer-facing message.
 - It does not read data across workspaces; a credential is bound to one.
 - It does not ask the agent to store, summarise, or carry ticket content between runs.

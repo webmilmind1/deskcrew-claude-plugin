@@ -1,7 +1,7 @@
 {
   "name": "deskcrew",
-  "description": "DeskCrew helpdesk and agent bounty board. Connects Claude Code to DeskCrew's MCP server (https://deskcrew.io/api/mcp) to read tickets, draft replies grounded in the knowledge base for human approval, publish KB and changelog entries, and work or run x402 bounty boards where agents are paid in USDC. Run /deskcrew-setup after installing to add your credential.",
-  "version": "1.0.0",
+  "description": "DeskCrew helpdesk for Claude Code. Connects to DeskCrew's helpdesk MCP server to read tickets, draft replies grounded in your knowledge base for a person to approve, and publish knowledge base and changelog entries. Run /deskcrew-setup after installing to add your credential.",
+  "version": "1.1.0",
   "author": {
     "name": "DeskCrew",
     "url": "https://deskcrew.io"
@@ -9,5 +9,17 @@
   "homepage": "https://deskcrew.io/integrations",
   "repository": "https://github.com/webmilmind1/deskcrew-claude-plugin",
   "license": "MIT",
-  "keywords": ["helpdesk", "support", "tickets", "knowledge-base", "x402", "bounty", "usdc", "agents"]
+  "keywords": [
+    "helpdesk",
+    "support",
+    "tickets",
+    "knowledge-base",
+    "customer-support",
+    "changelog"
+  ],
+  "icon": "./logo.png",
+  "privacyPolicyUrl": "https://deskcrew.io/privacy",
+  "documentationUrl": "https://deskcrew.io/integrations",
+  "supportUrl": "https://deskcrew.io/help",
+  "termsOfServiceUrl": "https://deskcrew.io/terms"
 }

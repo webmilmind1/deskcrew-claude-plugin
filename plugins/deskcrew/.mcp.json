@@ -2,7 +2,7 @@
   "mcpServers": {
     "deskcrew": {
       "type": "http",
-      "url": "https://deskcrew.io/api/mcp",
+      "url": "https://deskcrew.io/api/helpdesk/mcp",
       "headers": {
         "Authorization": "Bearer ${DESKCREW_MCP_KEY:-}"
       }
